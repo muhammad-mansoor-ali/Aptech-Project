@@ -1,0 +1,203 @@
+:root{
+  --primary:#42A5F5;
+  --accent:#FF7043;
+  --bg:#FFFDF7;
+  --text:#333;
+  --muted:#666;
+  --card-radius:16px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Brand */
+.logo-img{ width:48px; height:48px; object-fit:contain; }
+.brand-text{
+  font-family: 'Fredoka One', sans-serif;
+  color:var(--primary);
+  letter-spacing:1px;
+}
+
+/* Hero */
+.hero{
+  background: linear-gradient(180deg, rgba(66,165,245,0.05), rgba(255,235,59,0.02));
+  padding:80px 0;
+}
+.hero-title{
+  font-family: 'Fredoka One', sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  color:var(--text);
+  margin-bottom:8px;
+}
+
+/* Section titles */
+.section-title{
+  font-family: 'Fredoka One', sans-serif;
+  color:var(--primary);
+  margin-bottom:1rem;
+}
+
+/* Cards */
+.card { border-radius: var(--card-radius); }
+.btn-primary{
+  background:var(--primary);
+  border:none;
+}
+.btn-primary:hover{ filter:brightness(.95) }
+
+/* Product card */
+.product-card{ border-radius:16px; overflow:hidden; position:relative; }
+.product-img{ width:100%; height:200px; object-fit:cover; }
+
+/* wishlist heart */
+.wishlist-heart{
+  position:absolute;
+  right:12px;
+  top:12px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,0.9);
+  cursor:pointer;
+  transition:transform .12s;
+}
+.wishlist-heart:hover{ transform:scale(1.05); }
+.wishlist-heart.active{ background:var(--accent); color:white; }
+
+/* Icons */
+.icon-large{ font-size:40px; }
+
+/* Footer */
+footer{ position:relative }
+
+/* Utilities */
+.text-muted{ color:var(--muted) }
+
+/* Make grid cards equal height */
+.product-card .card-body{ display:flex; flex-direction:column; justify-content:space-between; min-height:160px; }
+
+
+/* ===== TOYO TOYS COLORFUL THEME ===== */
+body {
+  background-color: #FFFDF7;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar Gradient */
+.navbar {
+  background: linear-gradient(90deg, #FF6B6B, #FFD93D, #4D96FF);
+  animation: gradientShift 8s ease infinite;
+  background-size: 300% 300%;
+}
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.navbar a.nav-link {
+  color: white !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.navbar a.nav-link:hover {
+  color: #333 !important;
+  transform: scale(1.1);
+}
+
+/* Buttons */
+.btn, button {
+  border-radius: 30px !important;
+  background: linear-gradient(45deg, #4D96FF, #6BCB77);
+  color: #fff !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+.btn:hover, button:hover {
+  background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 105, 135, 0.6);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Section Dividers */
+.section-divider {
+  width: 100%;
+  height: 60px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23FF6B6B" fill-opacity="1" d="M0,256L60,250.7C120,245,240,235,360,224C480,213,600,203,720,197.3C840,192,960,192,1080,181.3C1200,171,1320,149,1380,138.7L1440,128V0H0Z"></path></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #6BCB77, #4D96FF);
+  color: white;
+  padding: 30px 0;
+}
+footer a {
+  color: #FFD93D;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #FF6B6B;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #FFD93D, #FF6B6B, #4D96FF);
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Wishlist Icon */
+.wishlist-icon {
+  color: #FF6B6B;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.wishlist-icon:hover {
+  transform: scale(1.3);
+  color: #FFD93D;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+section, .card, .hero {
+  animation: fadeIn 0.8s ease;
+}

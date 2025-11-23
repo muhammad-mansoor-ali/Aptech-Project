@@ -44,9 +44,60 @@
     </div>
   </main>
 
-  <footer class="bg-primary text-white py-3">
-    <div class="container text-center small">© <span id="year6"></span> Toyo Toys Pvt. Ltd.</div>
-  </footer>
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i> TOYO Toys
+                    </div>
+                    <p>Your one-stop destination for quality toys that inspire creativity and imagination.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Products</a></li>
+                        <li><a href="About.html"></a>About</li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Customer Service</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Subscribe to get special offers and updates on new products</p>
+                    <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button type="submit" style="padding: 25px; margin-left: 10px;">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p>&copy; 2025 TOYO Toys. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
